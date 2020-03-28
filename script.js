@@ -8,9 +8,12 @@ const textMax = document.querySelector('.textMax');
 toggle.addEventListener('click', function() {
     sidebar.classList.toggle('geser');
     if (!sidebar.classList.contains('geser')) {
+        toggle.style.opacity = '100%'
         toggle.textContent = 'X';
     } else {
         toggle.textContent = '>';
+        toggle.style.boxShadow = '0px 0px 00px rgba(0, 0, 0, 0)'
+        toggle.style.opacity = '20%'
     }
 
 });
