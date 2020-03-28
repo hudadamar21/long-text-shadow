@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long Text Shadow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+
+    <div class="sidebar">
+        <div class="toggle">X</div>
+        <div class="judul">Long Text Shadow</div>
+        <h3>Change Color</h3>
+        <button class="jscolor {valueElement:'chosen-value', onFineChange:'setBgColor(this)'}">
+            Background
+        </button>
+        <button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'}">
+		Text
+    </button>
+        <button id="shadow" class="jscolor {valueElement:'chosen-value', onFineChange:'setShadowColor(this)'}">
+		Shadow
+    </button>
+        <div class="max">Max <span class="textMax"></span> Character</div>
+    </div>
+    <div id="text" contenteditable="" spellcheck="false">your text here..</div>
+    <script src="script.js"></script>
+    <script src="jscolor.js"></script>
+</body>
+
+</html>
